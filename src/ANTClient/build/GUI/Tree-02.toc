@@ -1,0 +1,5 @@
+('/usr/local/lib/python2.7/site-packages/pyserial-3.4-py2.7.egg',
+ None,
+ set(['*.py', '*.pyc', '*.so', '*module.so', 'EGG-INFO']),
+ 'DATA',
+ [])

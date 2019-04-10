@@ -1,0 +1,5 @@
+('/Users/liujunhan/Downloads/SPACE-Project-master/ANTClient/build/GUI/pyusb-1.0.2-py2.7.egg',
+ None,
+ set(['*.py', '*.pyc', '*.so', '*module.so', 'EGG-INFO']),
+ 'DATA',
+ [])

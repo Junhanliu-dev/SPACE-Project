@@ -1,0 +1,35 @@
+New Endpoints:
+
+Note: For returning users, 
+
+1. The user should firstly log in through the website, through the endpoint '/users/<string:user_id>/login', this step is checking whether the user exists in the database.
+
+2. The user should open the Hardware connection, the client software then connects to the cloud server and creates userSession instance for recording the active user activity through endpoint '/register_session' (Method = "POST", method json body: e.g. {'id': '001' })
+
+3. The user should then using start button on the web-end to activate the userSession on the cloud server, this button should trigger the POST request to endpoint '/active_session/<string:user_id>', then userSession will start recording the heart rate from client software every 10 seconds. 
+
+
+#Check whether given user_id is in current database
+
+'/users/<string:user_id>/login'							methods: ['POST']							Return ---Successful : 	{'message': user_id + 'logged'}
+																										   ---Unsuccessful: {'code': 404, 'message': 'user not found'}
+No Json body required
+
+
+#Active user seeion on the Cloud server.
+/active_session/<string:user_id>'						methods: ['POST']							Return --- Successful: {'code':200, 'message': 'user '+ userID + ' activated.'}
+																										   --- Unsuccessful: {'message': 'session not activated, please active through local application.'}
+
+																										   ---Unsuccessful: {'code': 404, 'message': 'user not found.'}
+
+
+'/register_session'										methods: ['POST']							Return: -- successful: {'code': 200,'message': {'status': 'registered',
+																																					'id': userID,
+                                																													'name': message['user'],
+                                																													'sessionCode': S9_2018-10-08_20:36:31
+                                																													}
+                    																										}	
+
+                    																						-- Unccessful: {'code': 409, 'message': 'user has already activated.'}
+                    																								   	   {'code': 404, 'message': 'ResourceNotFound'}
+                    																								       {'code': 503, 'message': "HTTPError"}

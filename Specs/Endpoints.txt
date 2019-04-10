@@ -1,0 +1,60 @@
+Endpoints:
+
+'/':										methods: ['GET']			return: {'message': 'Welcome to ANT+ Server.'}
+
+# POST user to database and GET all users from the database
+'/users'										methods: ['POST']		return: -- successful:	 {'code': 200, 'message': 'created: userID'}
+
+																				-- unsuccessful: {'code': 409, 'message': "The User %s already exists, please check" % docID}
+
+																							 	 {'code': 400, 'message ': 'Bad request.'}
+
+
+
+'/users'										methods: ['GET']		return: -- successful: {'code': 200, 'message': [[ID,Name],...}
+																		return: -- unccessful: {'code': 500, 'message': 'server error.'}
+
+/users/<string:user_id>/detail					methods: ['GET']		return: -- successful: {'code': 200, 'message': {"id": '001,
+																														 "name": "Jame",
+																														 "max_hr": 100,
+																														 "exercise_zone": [lower, higher],
+																														 "cool_zone": [lower, higher],
+																														 "sessionList": ["S12_2018-10-08_20:53:40",..],
+																														}
+																								}
+
+'/active_user':								methods: ['GET']			return: {'message': {'users': [userID,..]}}
+
+
+
+'/active_user/<string:user>/deactive'		methods: ['POST']			return: -- successful: {'message': 'deactivated', 'id': userID}
+
+																				-- unsccessful: {'code': 404, 'message': 'resource not found'}
+
+
+
+'/register_session'							methods: ['POST']			return: -- successful: {'code': 200,'message': {'status': 'registered',
+																													'id': userID,
+                                																					'name': message['user'],
+                                																					'sessionCode': S9_2018-10-08_20:36:31
+                                																					}
+                    																			}
+
+                    															-- unccessful: {'code': 409, 'message': 'user has already activated.'}
+                    																	   	   {'code': 404, 'message': 'ResourceNotFound'}
+                    																	       {'code': 503, 'message': "HTTPError"}
+
+
+
+'/active_user/<string:user_id>/heart_rate'	methods: ['GET']			return: --successful: {'code': 200, 'message': {'user': user_id, 'heart_rate': heart_rate}}
+																				--unsuccessful: {'code': 500, 'message': 'heart get error.'}
+
+
+
+
+'/<string:userid>/sessions/<string:fileName>' methods: ['GET']			return --successful: return csv file download as attachment
+																		return --unsuccessful: {'code': 404, 'message': 'Resource not found.'}
+
+
+
+

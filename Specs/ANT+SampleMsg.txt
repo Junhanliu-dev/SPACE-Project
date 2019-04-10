@@ -1,0 +1,392 @@
+/Users/junhanliu/IDEWorkspace/PyCharm/ANT+/venv/bin/python /Users/junhanliu/IDEWorkspace/PyCharm/ANT+/Main.py
+Using log file: 2018-08-11T11:24:18.095309.ant
+starting node
+antnode Start
+self.reset()
+========== [WRITE] ==========
+0000 A4 01 4A 30 DF
+
+msg = message.ChannelRequestMessage()
+msg.setMessageID(MESSAGE_CAPABILITIES)
+========== [READ] ==========
+0000 A4 03 40 10 4A 28 95
+
+========== [WRITE] ==========
+0000 A4 02 4D 00 54 BF
+
+========== [READ] ==========
+0000 A4 08 54 08 08 00 BA 36
+0000 00 DF 04 AF
+
+caps <ANTPack.message.CapabilitiesMessage object at 0x105986950>
+def setNetworkKey, msg.setKey
+========== [WRITE] ==========
+0000 A4 09 46 00 00 00 00 00
+0000 00 00 00 00 EB
+
+========== [READ] ==========
+0000 A4 03 40 00 46 00 A1
+
+def setNetworkKey, msg.setKey
+========== [WRITE] ==========
+0000 A4 09 46 01 00 00 00 00
+0000 00 00 00 00 EA
+
+========== [READ] ==========
+0000 A4 03 40 01 46 00 A0
+
+def setNetworkKey, msg.setKey
+========== [WRITE] ==========
+0000 A4 09 46 02 00 00 00 00
+0000 00 00 00 00 E9
+
+========== [READ] ==========
+0000 A4 03 40 02 46 00 A3
+
+def setNetworkKey, msg.setKey
+========== [WRITE] ==========
+0000 A4 09 46 03 00 00 00 00
+0000 00 00 00 00 E8
+
+========== [READ] ==========
+0000 A4 03 40 03 46 00 A2
+
+def setNetworkKey, msg.setKey
+========== [WRITE] ==========
+0000 A4 09 46 04 00 00 00 00
+0000 00 00 00 00 EF
+
+========== [READ] ==========
+0000 A4 03 40 04 46 00 A5
+
+def setNetworkKey, msg.setKey
+========== [WRITE] ==========
+0000 A4 09 46 05 00 00 00 00
+0000 00 00 00 00 EE
+
+========== [READ] ==========
+0000 A4 03 40 05 46 00 A4
+
+def setNetworkKey, msg.setKey
+========== [WRITE] ==========
+0000 A4 09 46 06 00 00 00 00
+0000 00 00 00 00 ED
+
+========== [READ] ==========
+0000 A4 03 40 06 46 00 A7
+
+def setNetworkKey, msg.setKey
+========== [WRITE] ==========
+0000 A4 09 46 07 00 00 00 00
+0000 00 00 00 00 EC
+
+========== [READ] ==========
+0000 A4 03 40 07 46 00 A6
+
+netkey Set
+def setNetworkKey, msg.setKey
+========== [WRITE] ==========
+0000 A4 09 46 00 B9 A5 21 FB
+0000 BD 72 C3 45 64
+
+========== [READ] ==========
+0000 A4 03 40 00 46 00 A1
+
+netkey set finished
+Node Started
+channel setting up... get free channel
+Set channel Name as C:HRM
+Channel assign N:ANT+ CHANNEL_TYPE_TWOWAY_RECEIVE
+========== [WRITE] ==========
+0000 A4 03 42 00 00 00 E5
+
+========== [READ] ==========
+0000 A4 03 40 00 42 00 A5
+
+set ID
+========== [WRITE] ==========
+0000 A4 05 51 00 00 00 78 00
+0000 88
+
+========== [READ] ==========
+0000 A4 03 40 00 51 00 B6
+
+Set Search Timeout
+========== [WRITE] ==========
+0000 A4 02 44 00 FF 1D
+
+========== [READ] ==========
+0000 A4 03 40 00 44 00 A3
+
+set Period 8070
+========== [WRITE] ==========
+0000 A4 03 43 00 86 1F 7D
+
+========== [READ] ==========
+0000 A4 03 40 00 43 00 A4
+
+set frequency 57
+========== [WRITE] ==========
+0000 A4 02 45 00 39 DA
+
+========== [READ] ==========
+0000 A4 03 40 00 45 00 A2
+
+channel open
+========== [WRITE] ==========
+0000 A4 01 4B 00 EE
+
+========== [READ] ==========
+0000 A4 03 40 00 4B 00 AC
+
+channel setup finished
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 C2 3F
+0000 F8 40 31 63 F0
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0310>
+Beat Count: 49
+Heart Rate: 99
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 C2 3F
+0000 F8 40 31 63 F0
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0350>
+Beat Count: 49
+Heart Rate: 99
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 F8 40
+0000 3C 44 32 63 76
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0390>
+Beat Count: 50
+Heart Rate: 99
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 F8 40
+0000 3C 44 32 63 76
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf03d0>
+Beat Count: 50
+Heart Rate: 99
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0410>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0450>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0490>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf04d0>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0510>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0550>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0590>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105986690>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105986a90>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105986b90>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105986c10>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105986c90>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105986dd0>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105986c50>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105986d50>
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105986e90>
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105bf02d0>
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf00d0>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105bf0110>
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105bf0190>
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf01d0>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0210>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0250>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105bf0310>
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0350>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0390>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf03d0>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 84 00 3C 44
+0000 2B 46 33 66 27
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0410>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105bf0450>
+Beat Count: 51
+Heart Rate: 102
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105bf0490>
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105bf04d0>
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105bf0510>
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105bf0550>
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x10596fc10>
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105986690>
+========== [READ] ==========
+0000 A4 03 40 00 01 02 E4
+
+MSG type:  <ANTPack.message.ChannelEventMessage object at 0x105986a90>
+========== [READ] ==========
+0000 A4 09 4E 00 04 00 3C 44
+0000 2B 46 33 66 A7
+
+MSG type:  <ANTPack.message.ChannelBroadcastDataMessage object at 0x105986b90>
+Beat Count: 51
+Heart Rate: 102
+
+Process finished with exit code 0

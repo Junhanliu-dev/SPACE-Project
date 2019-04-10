@@ -1,0 +1,56 @@
+---
+
+- hosts: MyCloud
+  sudo: yes
+
+  tasks:
+
+    - name: apt-get update
+      raw: apt-get update
+
+      
+    - name: Install vim, apache2, PythonTK
+      apt: 
+        name: "{{ item }}" 
+        state: latest
+      with_items:
+
+        - vim
+        - apache2
+        - python-tk
+
+    - name: Setup Python envi
+      apt: 
+        name: "{{item}}"
+        state: latest
+      with_items:
+        - python-pip
+        - python-dev
+        - build-essential
+
+    - name: Install Data Packages
+      pip: 
+        name: "{{item}}"
+        state: latest
+      with_items:
+        - flask
+        - couchdb
+        - gunicorn
+        - requests
+
+    - name: Install CouchDB
+      apt: 
+        name: "{{item}}"
+        state: latest
+      with_items:
+        - couchdb
+
+
+
+
+
+
+
+    
+
+...
